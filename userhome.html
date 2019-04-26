@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Online Car Maintenance</title>
+<style>
+body{
+margin:0px;
+padding:0px;
+background:url("Backgroung.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+width:100%;
+height:10%;
+}
+#img{
+float:left;
+}
+
+h1{
+padding-top:20px;
+text-align:center;
+margin-left:450px;
+color:#fff;
+float:left;
+}
+
+ul{
+float:right;
+margin: 20px 30px 0px 0px;
+}
+li{
+margin-right:20px;
+float:left;
+list-style:none;
+}
+a{
+color:#fff;
+text-decoration:none;
+}
+.about{
+width:400px;
+height:200px;
+text-align:justify;
+color:#fff;
+margin-top:100px;
+}
+.mmm{
+float:left;
+margin:20px 20px 20px 0px;
+background:#fff;
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<a href="userhome.html"><img src="picture_HCI.jpg" id="img"/></a>
+
+<h1>Online Car Maintenance</h1>
+<form action="" id="form1">
+<input type="submit" value="Logout" style="float:right;margin:20px 20px 0px 0px;" onclick="submit1()"  />
+</form>
+</div>
+<div class="body">
+<center><div class="about">
+<div class="mmm">
+<img src="oil-change.jpg" style="width:100px;height:100px;"/>
+<form action="" id="form2">
+<input type="submit" value="Oil Change" style="width:100px;height:100px;" onclick="submit2()" />
+</form>
+</div>
+<div class="mmm">
+<img src="painting.jpg" style="width:100px;height:100px;"/>
+<form action="" >
+<input type="submit" value="Re-Painting" style="width:100px;height:100px;"/>
+</form>
+</div>
+<div class="mmm">
+<img src="-cars-disc-brake-450w-1199197042.jpg" style="width:100px;height:100px;"/>
+<form action="" >
+<input type="submit" value="Breaks" style="width:100px;height:100px;"/>
+</form>
+</div></br>
+<div class="mmm">
+<img src="battery.jpg" style="width:100px;height:100px;"/>
+<form action="" >
+<input type="submit" value="Battery" style="width:100px;height:100px;"/>
+</form>
+</div>
+<div class="mmm">
+<img src="service.png" style="width:100px;height:100px;"/>
+<form action="" >
+<input type="submit" value="Service" style="width:100px;height:100px;"/>
+</form>
+</div>
+<div class="mmm">
+<img src="tire-icon.png" style="width:100px;height:100px;"/>
+<form action="" >
+<input type="submit" value="Tire" style="width:100px;height:100px;"/>
+</form>
+</div>
+
+
+</div></center>
+</div>
+
+</body>
+<script>
+function submit1(){
+
+alert("Logout Successful");
+var frm = document.getElementById("form1");
+frm.action = "index.html";
+}
+function submit2(){
+var frm = document.getElementById("form2");
+frm.action = "oilchange.html";
+}
+
+
+</script>
+</html>

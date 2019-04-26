@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Online Car Maintenance</title>
+<style>
+body{
+margin:0px;
+padding:0px;
+background:url("Backgroung.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+width:100%;
+height:10%;
+}
+#img{
+float:left;
+}
+
+h1{
+padding-top:20px;
+text-align:center;
+margin-left:450px;
+color:#fff;
+float:left;
+}
+
+ul{
+float:right;
+margin: 20px 30px 0px 0px;
+}
+li{
+margin-right:20px;
+float:left;
+list-style:none;
+}
+a{
+color:#fff;
+text-decoration:none;
+}
+.about{
+width:500px;
+height:auto;
+text-align:justify;
+color:#000;
+background:#fff;
+margin-top:40px;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<a href="userhome.html"><img src="picture_HCI.jpg" id="img"/></a>
+
+<h1>Online Car Maintenance</h1>
+<form action="" id="form1">
+<input type="submit" value="Logout" style="float:right;margin:20px 20px 0px 0px;" onclick="submit1()"  />
+</form>
+</div>
+<div class="body">
+<center><div class="about">
+<center><h3 style="padding-top:12px;">Oil Change</h3></center>
+
+<h3>Details: </h3><p style="padding:0px 12px 12px 12px;">Spcially formulated motor oil made for the highest levels of protection and performance for ultimate peace of mind. More and more vehicle manufacturers today require it . see if your is one of them.
+* Up To 5 Quaters of standard/conventional oil 
+* Replace oil filter
+*Check Differential upon request</p>
+<h3>Price: $25.99</h3>
+
+
+</div>
+<form action="" id="form2">
+<input type="submit" value="Book" onclick="submit2()"  />
+</form>
+
+</center>
+</div>
+</body>
+<script>
+function submit1(){
+alert("Logout Successful");
+var frm = document.getElementById("form1");
+frm.action = "index.html";
+}
+function submit2(){
+var frm = document.getElementById("form2");
+frm.action = "details.html";
+}
+
+
+</script>
+</html>
